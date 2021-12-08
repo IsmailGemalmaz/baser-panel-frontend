@@ -1,0 +1,32 @@
+
+
+   .hrinfo{
+       margin-left: 35%;
+       margin-right: 35%;
+      
+   }
+
+    /* Glyph, by Harry Roberts */
+
+    .style-eight {
+      overflow: visible;
+      /* For IE */
+      padding: 0;
+      border: none;
+      border-top: medium double rgb(0, 0, 0);
+      color: rgb(0, 0, 0);
+     
+      text-align: center;
+  }
+
+  .style-eight:after {
+    
+      content: "§";
+      display: inline-block;
+      position: relative;
+      top: -0.8em;
+      font-size: 1em;
+      padding: 0 0.25em;
+      background: white;
+  }
+

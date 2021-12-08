@@ -1,0 +1,82 @@
+
+  <app-nav></app-nav>
+ 
+<div class="container">
+    <br><br>
+    <div class="row">
+        <div class="col-md-7">
+            <div class="p-3 mb-4 bg-light rounded-3">
+                <div class="container-fluid py-3">
+
+                    <h3 class="fw-bold"> Hakkımızda</h3>
+
+                    <hr class="hr">
+                    <img src="http://www.baserpanel.com/wp-content/uploads/2019/12/55-300x131.png" height="150px"
+                        width="300px" alt="">
+                    <br><br>
+                    <p class="col-md-12 fs-7" *ngFor="let about of abouts">
+                        {{about.about}}
+                    </p>
+                    
+
+                </div>
+            </div>
+
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Sertifikalarımız</h2>
+                        <p><i class="fas fa-check"></i> tse</p>
+                        <p> <i class="fas fa-check"></i> msp</p>
+                        <img src="" alt="">
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Referanslarımız</h2>
+                        <marquee scrollamount="12" height="100%" width="100%" direction="alternate">
+
+                            <img style="margin-right: 10px;" height="200px" width="200px"
+                                src="https://www.baserpanel.com/wp-content/uploads/2019/12/proje-7.jpg">
+                            <img style="margin-right: 10px;" height="200px" width="200px"
+                                src="https://www.baserpanel.com/wp-content/uploads/2019/12/proje-7.jpg">
+                            <img style="margin-right: 10px;" height="200px" width="200px"
+                                src="https://www.baserpanel.com/wp-content/uploads/2019/12/proje-7.jpg">
+                            <img style="margin-right: 10px;" height="200px" width="200px"
+                                src="https://www.baserpanel.com/wp-content/uploads/2019/12/proje-7.jpg">
+
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 ">
+            <iframe width="100%" height="30%" src="https://www.youtube.com/embed/JtulfcUCh5Y"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TypNkFuNASY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Xx2JhUKZLEQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br>
+</div>
+
+ <!-- FOOTER -->
+ <app-footer></app-footer>

@@ -1,0 +1,47 @@
+<app-admin-nav></app-admin-nav>
+
+<div class="container" style="background-color: rgb(248, 247, 247);">
+    <form [formGroup]="aboutAddForm" (ngSubmit)="addAbout()" class="form">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Hakkımızda Başlık</label>
+          <input type="text" id="aboutTitle" name="aboutTitle" formControlName="aboutTitle"  class="form-control" placeholder="Hakkımızda Başlığı Girin" >
+           <!-- <div *ngIf="aboutAddForm.get('aboutTitle').hasError('required') && aboutAddForm.get('aboutTitle').dirty" id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>  -->
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Hakkımızda</label>
+            <ckeditor    formControlName="about" [disabled]='readonly'  [editor]="Editor" > </ckeditor>
+        </div>
+        
+        
+        <button type="submit" class="btn btn-dark"  [disabled]="aboutAddForm.invalid">Hakkımızda Ekle</button>
+       
+       
+      </form>
+<hr>
+
+      <form [formGroup]="certificatesAddForm" (ngSubmit)="addCer()" class="form">
+       
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Sertifika girin</label>
+          <input type="text" id="certificates" name="certificates" formControlName="certificates"  class="form-control" placeholder="Sertifika girin" >
+           <!-- <div *ngIf="aboutAddForm.get('aboutTitle').hasError('required') && aboutAddForm.get('aboutTitle').dirty" id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>  -->
+        </div>
+        
+        <button type="submit" class="btn btn-dark"  [disabled]="certificatesAddForm.invalid">Hakkımızda Ekle</button>
+       
+       
+      </form>
+<hr>
+      <form [formGroup]="referencesAddForm" (ngSubmit)="addRef()" class="form">
+      
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Referans girin</label>
+          <input type="text" id="references" name="references" formControlName="references"  class="form-control" placeholder="Referans girin" >
+           <!-- <div *ngIf="aboutAddForm.get('aboutTitle').hasError('required') && aboutAddForm.get('aboutTitle').dirty" id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>  -->
+        </div>
+        <button type="submit" class="btn btn-dark"  [disabled]="referencesAddForm.invalid">Hakkımızda Ekle</button>
+       
+       
+      </form>
+</div>
